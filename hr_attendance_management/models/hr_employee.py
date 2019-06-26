@@ -256,7 +256,7 @@ class HrEmployee(models.Model):
 
         config.update_balance_cron_date()
 
-    @api.model
+    @api.multi
     def _update_past_period_balance(self):
         """
         This function is meant to be run some time after
